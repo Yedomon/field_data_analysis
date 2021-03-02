@@ -15,8 +15,8 @@ Raw data of each location were checked for outliers and tested for normality. Th
 
 
 
-H~3~PO~4~
-y~ijkl = µ + g~i + e~j + (g×e)~ij + r~jk + b~jkl +ɛ~ijkl
+
+$$y_ijkl = µ + g_i + e_j + (g×e)_ij + r_jk + b_jkl +ɛ_ijkl$$
 
 
 
