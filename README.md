@@ -34,5 +34,6 @@ across environments, using the following formula,
 [Vignette Labybird](https://github.com/briencj/asremlPlus/blob/master/vignettes/Ladybird.asreml.pdf)
 
 
+A tutorial on the statistical analysis of factorial experiments with qualitative and quantitative treatment factor levels [Tuto](https://cran.r-project.org/web/packages/agriTutorial/vignettes/agriTutorialVignette.pdf) | [Paper](https://onlinelibrary.wiley.com/doi/full/10.1111/jac.12267)
 
 
