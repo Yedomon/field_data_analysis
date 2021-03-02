@@ -37,3 +37,6 @@ across environments, using the following formula,
 A tutorial on the statistical analysis of factorial experiments with qualitative and quantitative treatment factor levels [Tuto](https://cran.r-project.org/web/packages/agriTutorial/vignettes/agriTutorialVignette.pdf) | [Paper](https://onlinelibrary.wiley.com/doi/full/10.1111/jac.12267)
 
 
+
+[equivalent asmrel](https://stats.stackexchange.com/questions/18709/lme4-or-other-open-source-r-package-code-equivalent-to-asreml-r)
+
