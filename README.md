@@ -10,7 +10,7 @@ Raw data of each location were checked for outliers and tested for normality. Th
 
 
 
-   $$yijkl = µ + gi + ej + (g×e) ij + rjk +bjkl +ɛijkl$$
+   $yijkl = µ + gi + ej + (g×e) ij + rjk +bjkl +ɛijkl$
 
 
 
