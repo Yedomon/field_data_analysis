@@ -16,7 +16,7 @@ Raw data of each location were checked for outliers and tested for normality. Th
 
 
 
-$$y_ijkl = µ + g_i + e_j + (g×e)_ij + r_jk + b_jkl +ɛ_ijkl$$
+$y_{ijkl} = µ + g_{i} + e_{j} + (g×e)_{ij} + r_{jk} + b_{jkl} +ɛ_{ijkl}$
 
 
 
