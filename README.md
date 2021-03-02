@@ -41,3 +41,6 @@ A tutorial on the statistical analysis of factorial experiments with qualitative
 [equivalent asmrel](https://stats.stackexchange.com/questions/18709/lme4-or-other-open-source-r-package-code-equivalent-to-asreml-r)
 
 [sommer](https://www.rdocumentation.org/packages/sommer/versions/4.1.2/vignettes/v5.sommer.vs.lme4.Rmd)  | [tuto](https://rdrr.io/cran/sommer/) | sommer vs lme4](https://rdrr.io/cran/sommer/f/inst/doc/v5.sommer.vs.lme4.pdf)  | [paper](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0156744) | [usage](http://finzi.psych.upenn.edu/R/library/sommer/html/mmer2.html) heterescedasticity option| [poster](https://ausbiometric2019.org/posters/Sam_Rogers_IBS_poster.pdf)
+
+
+> Other functions such as summary, fitted, randef (notice here is randef not ranef), anova, variogram, residuals, coef and plot applicable to typical linear models can also be applied to models fitted using the mmer2-type of functions.
