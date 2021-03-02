@@ -24,7 +24,14 @@ across environments, using the following formula,
 
 
 
+[Tutorial 1 (ASReml-R) - Estimating the heritability of birth weight](https://www.wildanimalmodels.org/tiki-download_wiki_attachment.php?attId=3)
 
+
+
+[asremlPlus](https://github.com/briencj/asremlPlus)
+
+
+[Vignette Labybird](https://github.com/briencj/asremlPlus/blob/master/vignettes/Ladybird.asreml.pdf)
 
 
 
