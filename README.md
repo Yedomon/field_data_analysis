@@ -1,6 +1,14 @@
 # field_data_analysis
 
 
+
+- #### [Genetic parameter estimation and selection in advanced breeding population of white Guinea yam](https://www.tandfonline.com/doi/pdf/10.1080/15427528.2021.1881012)
+
+
+
+
+
+
 - #### [Heterosis and combining abilities in a diverse seven-parent pearl millet population diallel tested in West Africa](https://assets.researchsquare.com/files/rs-232609/v1_stamped.pdf)
 
 
