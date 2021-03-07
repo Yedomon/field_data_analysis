@@ -2,9 +2,8 @@
 
 
 
-- #### [Broadening the genetic base of sesame
-(Sesamum indicum L.) through germplasm
-enhancement](https://www.cambridge.org/core/journals/plant-genetic-resources/article/broadening-the-genetic-base-of-sesame-sesamum-indicum-l-through-germplasm-enhancement/8F5A35415966AA813B3484EA291CCC40)
+- #### [Broadening the genetic base of sesame (Sesamum indicum L.) through germplasm enhancement](https://www.cambridge.org/core/journals/plant-genetic-resources/article/broadening-the-genetic-base-of-sesame-sesamum-indicum-l-through-germplasm-enhancement/8F5A35415966AA813B3484EA291CCC40)
+
 
 - #### [Diversity in Indian sesame collection and stratification of germplasm accessions in different diversity groups](https://link.springer.com/article/10.1023/A:1008652420477)
 
