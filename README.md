@@ -6,6 +6,9 @@ choice 1: Leveraging phenotypic variation in a worldwide panel from the Korean g
 choice 2: Leveraging phenotypic variation in a worldwide panel from the Korean genebank to identify new resources for yield, protein, lignan and oil oriented sesame breeding.
 
 
+choice 3: Leveraging phenotypic diversity in a worldwide panel from the Korean genebank to identify new resources for yield, protein, lignan and oil oriented sesame breeding.
+
+
 - #### [Broadening the genetic base of sesame (Sesamum indicum L.) through germplasm enhancement](https://www.cambridge.org/core/journals/plant-genetic-resources/article/broadening-the-genetic-base-of-sesame-sesamum-indicum-l-through-germplasm-enhancement/8F5A35415966AA813B3484EA291CCC40)
 
 
