@@ -2,6 +2,23 @@
 
 
 
+- #### [Broadening the genetic base of sesame
+(Sesamum indicum L.) through germplasm
+enhancement](https://www.cambridge.org/core/journals/plant-genetic-resources/article/broadening-the-genetic-base-of-sesame-sesamum-indicum-l-through-germplasm-enhancement/8F5A35415966AA813B3484EA291CCC40)
+
+- #### [Diversity in Indian sesame collection and stratification of germplasm accessions in different diversity groups](https://link.springer.com/article/10.1023/A:1008652420477)
+
+
+- #### [https://link.springer.com/article/10.1023/A:1008652420477](https://www.jstage.jst.go.jp/article/jsbbs/56/1/56_1_85/_pdf/-char/en)
+
+
+
+
+
+
+
+
+
 - #### [Genetic parameter estimation and selection in advanced breeding population of white Guinea yam](https://www.tandfonline.com/doi/pdf/10.1080/15427528.2021.1881012)
 
 
