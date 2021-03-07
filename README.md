@@ -1,9 +1,7 @@
 # field_data_analysis
 
 
-Leveraging sesame breeding resources through phenotypic screening and core collection inference from a worlwide panel of the Korean genebank.
-
-
+Leveraging sesame breeding resources through phenotypic screening and core collection inference from a worldwide panel of the Korean genebank.
 
 - #### [Broadening the genetic base of sesame (Sesamum indicum L.) through germplasm enhancement](https://www.cambridge.org/core/journals/plant-genetic-resources/article/broadening-the-genetic-base-of-sesame-sesamum-indicum-l-through-germplasm-enhancement/8F5A35415966AA813B3484EA291CCC40)
 
