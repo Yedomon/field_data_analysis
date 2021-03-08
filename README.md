@@ -9,6 +9,12 @@ choice 2: Leveraging phenotypic variation in a worldwide panel from the Korean g
 choice 3: Leveraging phenotypic diversity in a worldwide panel from the Korean genebank to identify new resources for yield, protein, lignan and oil oriented sesame breeding.
 
 
+- #### [Lignans of Sesame (Sesamum indicum L.): A Comprehensive Review](https://www.mdpi.com/1420-3049/26/4/883/htm)
+
+
+- #### [Lignan contents in sesame seeds and products](https://onlinelibrary.wiley.com/doi/pdf/10.1002/ejlt.200700057)
+
+
 - #### [Near-infrared reflectance spectroscopy reveals wide variation in major components of sesame seeds from Africa and Asia](https://www.sciencedirect.com/science/article/pii/S2214514117301149#!)
 
 
