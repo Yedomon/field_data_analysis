@@ -9,6 +9,13 @@ choice 2: Leveraging phenotypic variation in a worldwide panel from the Korean g
 choice 3: Leveraging phenotypic diversity in a worldwide panel from the Korean genebank to identify new resources for yield, protein, lignan and oil oriented sesame breeding.
 
 
+- #### [Near-infrared reflectance spectroscopy reveals wide variation in major components of sesame seeds from Africa and Asia](https://www.sciencedirect.com/science/article/pii/S2214514117301149#!)
+
+
+> To cross-validate the results of NIRS scanning, the 70 samples with sufficient seeds were subjected to chemical determination. Approximately 10 g of cleaned seed samples were manually ground to fine powder with liquid nitrogen. Seed oil was estimated by the conventional Soxhlet method using petroleum ether as extraction solvent [13]. Total protein content was determined by the Kjeldahl method according to AOAC [14]. Determination of oleic and linoleic acids was performed following Stefanoudaki et al. [15]. Each sample was tested in triplicate.
+
+
+
 - #### [Broadening the genetic base of sesame (Sesamum indicum L.) through germplasm enhancement](https://www.cambridge.org/core/journals/plant-genetic-resources/article/broadening-the-genetic-base-of-sesame-sesamum-indicum-l-through-germplasm-enhancement/8F5A35415966AA813B3484EA291CCC40)
 
 
