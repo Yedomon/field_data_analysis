@@ -1,6 +1,10 @@
 # field_data_analysis
 
 
+- #### [Korean soybean core collection: Genotypic and phenotypic diversity population structure and genome-wide association study](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0224074)
+
+
+
 choice 1: Leveraging phenotypic variation in a worldwide panel from the Korean genebank to enhance yield, protein, lignan and oil oriented sesame breeding.
 
 choice 2: Leveraging phenotypic variation in a worldwide panel from the Korean genebank to identify new resources for yield, protein, lignan and oil oriented sesame breeding.
