@@ -1,6 +1,9 @@
 # field_data_analysis
 
 
+- #### [Quantitative genetic analysis of agronomic and morphological traits in sorghum, Sorghum bicolor](https://www.frontiersin.org/articles/10.3389/fpls.2015.00945/full)
+
+
 - #### [Korean soybean core collection: Genotypic and phenotypic diversity population structure and genome-wide association study](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0224074)
 
 
