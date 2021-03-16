@@ -1,5 +1,7 @@
 # field_data_analysis
 
+[Effects of Red/Blue Light Ratio and Short-term Light Quality Conversion on Growth and Anthocyanin Contents of Baby Leaf Lettuce](https://www.koreascience.or.kr/article/JAKO201015037859939.page)
+
 - #### [Genetic divergence, path analysis and molecular diversity analysis in cluster bean (Cyamopsis tetragonoloba L. Taub.)](https://www.sciencedirect.com/science/article/pii/S0926669016303843) 
 
 
