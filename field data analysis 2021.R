@@ -28,346 +28,6 @@ names(data_capsule_length_width)
 
 
 
-### Plant height
-
-data_ph = data_qr %>% 
-  select(Plant_height, Continent) 
-
-
-a = ggstatsplot::ggbetweenstats(
-  data = data_ph,
-  x = Continent,
-  y = Plant_height,
-  type = "robust",
-  messages = TRUE,
-  #pairwise.comparisons = TRUE,
-  #p.adjust.method = "bonferroni",
-  title = "(A)"
-) +
-  xlab("Continent") + ylab("Plant height (cm)")+
-  theme(panel.background = element_rect(colour = "grey20"))+
-  theme(axis.text.x = element_text(face="bold", color="black", size=10),
-        axis.text.y = element_text(face="bold", color="black", size=10))+
-  ggplot2::scale_color_manual(values = c("#0E6251", "#FF5733", "#581845"))
-
-
-
-
-### Productive_axis_length
-
-data_pal = data_qr %>% 
-  select(Productive_axis_length, Continent) 
-
-
-b = ggstatsplot::ggbetweenstats(
-  data = data_pal,
-  x = Continent,
-  y = Productive_axis_length,
-  messages = TRUE,
-  type = "robust",
-  #pairwise.comparisons = TRUE,
-  #p.adjust.method = "bonferroni",
-  title = "(B)"
-) +
-  xlab("Continent") + ylab("Productive axis length (cm)")+
-  theme(panel.background = element_rect(colour = "grey20"))+
-  theme(axis.text.x = element_text(face="bold", color="black", size=10),
-        axis.text.y = element_text(face="bold", color="black", size=10))+
-  ggplot2::scale_color_manual(values = c("#0E6251", "#FF5733", "#581845"))
-
-
-
-### Branch number 
-
-c = data_qr %>% 
-  select(Branch_number, Continent)%>% 
-  ggstatsplot::ggbetweenstats(
-    x = Continent,
-    y = Branch_number,
-    messages = TRUE,
-    type = "robust",
-    #pairwise.comparisons = TRUE,
-    #p.adjust.method = "bonferroni",
-    title = "(C)"
-  ) +
-  xlab("Continent") + ylab("Branch number")+
-  theme(panel.background = element_rect(colour = "grey20"))+
-  theme(axis.text.x = element_text(face="bold", color="black", size=10),
-        axis.text.y = element_text(face="bold", color="black", size=10))+
-  ggplot2::scale_color_manual(values = c("#0E6251", "#FF5733", "#581845"))
-
-
-
-
-### Diameter
-
-data_d = data_qr %>% 
-  select(Diameter, Continent) 
-
-
-d = ggstatsplot::ggbetweenstats(
-  data = data_d,
-  x = Continent,
-  y = Diameter,
-  messages = TRUE,
-  type = "robust",
-  #pairwise.comparisons = TRUE,
-  #p.adjust.method = "bonferroni",
-  title = "(D)"
-) +
-  xlab("Continent") + ylab("Stem diameter (mm)")+
-  theme(panel.background = element_rect(colour = "grey20"))+
-  theme(axis.text.x = element_text(face="bold", color="black", size=10),
-        axis.text.y = element_text(face="bold", color="black", size=10))+
-  ggplot2::scale_color_manual(values = c("#0E6251", "#FF5733", "#581845"))
-
-
-### Render 4 graphs together
-
-(a | b ) / (c | d)
-
-
-
-### Capsule number
-
-data_cn = data_qr %>% 
-  select(Accession, Capsule_Number, Continent) 
-
-e = ggstatsplot::ggbetweenstats(
-  data = data_cn,
-  x = Continent,
-  y = Capsule_Number,
-  messages = TRUE,
-  type = "robust",
-  #outlier.tagging = TRUE, 
-  #outlier.coef = 1.5,
-  #outlier.label = Accession,
-  #pairwise.comparisons = TRUE,
-  #p.adjust.method = "bonferroni",
-  title = "(E)"
-) +
-  xlab("Continent") + ylab("Capsule number")+
-  scale_y_continuous(breaks=c(0,250,500,750,1000,1250))+
-  theme(panel.background = element_rect(colour = "grey20"))+
-  theme(axis.text.x = element_text(face="bold", color="black", size=10),
-        axis.text.y = element_text(face="bold", color="black", size=10))+
-  ggplot2::scale_color_manual(values = c("#0E6251", "#FF5733", "#581845"))
-
-
-
-### Dried biomass
-
-f = data_nqr1 %>% 
-  select(Dried_Biomass, Continent)%>% 
-  ggstatsplot::ggbetweenstats(
-    x = Continent,
-    y = Dried_Biomass,
-    messages = TRUE,
-    type = "robust",
-    #pairwise.comparisons = TRUE,
-    #p.adjust.method = "bonferroni",
-    title = "(F)"
-  ) +
-  xlab("Continent") + ylab("Dried biomass (g)")+
-  theme(panel.background = element_rect(colour = "grey20"))+
-  theme(axis.text.x = element_text(face="bold", color="black", size=10),
-        axis.text.y = element_text(face="bold", color="black", size=10))+
-  ggplot2::scale_color_manual(values = c("#0E6251", "#FF5733", "#581845"))
-
-
-### Dried seed weight
-
-
-
-g = data_nqr1 %>% 
-  select(Dried_Seed_Weight, Continent)%>% 
-  ggstatsplot::ggbetweenstats(
-    x = Continent,
-    y = Dried_Seed_Weight,
-    messages = TRUE,
-    type = "robust",
-    #pairwise.comparisons = TRUE,
-    #p.adjust.method = "bonferroni",
-    title = "(G)"
-  ) +
-  xlab("Continent") + ylab("Dried seed weight (g)")+
-  theme(panel.background = element_rect(colour = "grey20"))+
-  theme(axis.text.x = element_text(face="bold", color="black", size=10),
-        axis.text.y = element_text(face="bold", color="black", size=10))+
-  ggplot2::scale_color_manual(values = c("#0E6251", "#FF5733", "#581845"))
-
-
-
-### Harvest index
-
-
-
-h = data_nqr1 %>% 
-  select(Harvest_Index, Continent)%>% 
-  ggstatsplot::ggbetweenstats(
-    x = Continent,
-    y = Harvest_Index,
-    messages = TRUE,
-    type = "robust",
-    #pairwise.comparisons = TRUE,
-    #p.adjust.method = "bonferroni",
-    title = "(H)"
-  ) +
-  xlab("Continent") + ylab("Harvest index")+
-  theme(panel.background = element_rect(colour = "grey20"))+
-  theme(axis.text.x = element_text(face="bold", color="black", size=10),
-        axis.text.y = element_text(face="bold", color="black", size=10))+
-  ggplot2::scale_color_manual(values = c("#0E6251", "#FF5733", "#581845"))
-
-
-
-### Render 4 graphs together
-
-(e | f ) / (g | h)
-
-
-### Thousand_Seed_Weight
-
-i = data_nqr1 %>% 
-  select(Thousand_Seed_Weight, Continent)%>% 
-  ggstatsplot::ggbetweenstats(
-    x = Continent,
-    y = Thousand_Seed_Weight,
-    messages = TRUE,
-    type = "robust",
-    #pairwise.comparisons = TRUE,
-    #p.adjust.method = "bonferroni",
-    title = "(I)"
-  ) +
-  xlab("Continent") + ylab("Thousand Seed Weight (g)")+
-  theme(panel.background = element_rect(colour = "grey20"))+
-  theme(axis.text.x = element_text(face="bold", color="black", size=10),
-        axis.text.y = element_text(face="bold", color="black", size=10))+
-  ggplot2::scale_color_manual(values = c("#0E6251", "#FF5733", "#581845"))
-
-
-
-### Flowering
-
-j = data_nqr1 %>% 
-  select(Flowering, Continent)%>% 
-  ggstatsplot::ggbetweenstats(
-    x = Continent,
-    y = Flowering,
-    messages = TRUE,
-    type = "robust",
-    #pairwise.comparisons = TRUE,
-    #p.adjust.method = "bonferroni",
-    title = "(J)"
-  ) +
-  xlab("Continent") + ylab("Days to 50% flowering")+
-  theme(panel.background = element_rect(colour = "grey20"))+
-  theme(axis.text.x = element_text(face="bold", color="black", size=10),
-        axis.text.y = element_text(face="bold", color="black", size=10))+
-  ggplot2::scale_color_manual(values = c("#0E6251", "#FF5733", "#581845"))
-
-
-
-### Maturity
-
-
-k = data_nqr1 %>% 
-  select(Maturity, Continent)%>% 
-  ggstatsplot::ggbetweenstats(
-    x = Continent,
-    y = Maturity,
-    messages = TRUE,
-    type = "robust",
-    #pairwise.comparisons = TRUE,
-    #p.adjust.method = "bonferroni",
-    title = "(K)"
-  ) +
-  xlab("Continent") + ylab("Days to 50% maturity") +
-  theme(panel.background = element_rect(colour = "grey20"))+
-  theme(axis.text.x = element_text(face="bold", color="black", size=10),
-        axis.text.y = element_text(face="bold", color="black", size=10))+
-  ggplot2::scale_color_manual(values = c("#0E6251", "#FF5733", "#581845"))
-
-
-
-### Flowering_to_Maturity
-
-
-l = data_nqr1 %>% 
-  select(Flowering_to_Maturity, Continent)%>% 
-  ggstatsplot::ggbetweenstats(
-    x = Continent,
-    y = Flowering_to_Maturity,
-    messages = TRUE,
-    type = "robust",
-    #pairwise.comparisons = TRUE,
-    #p.adjust.method = "bonferroni",
-    title = "(L)"
-  ) +
-  xlab("Continent") + ylab("Days from 50% flowering to 50% maturity") +
-  theme(panel.background = element_rect(colour = "grey20"))+
-  theme(axis.text.x = element_text(face="bold", color="black", size=10),
-        axis.text.y = element_text(face="bold", color="black", size=10))+
-  ggplot2::scale_color_manual(values = c("#0E6251", "#FF5733", "#581845"))
-
-
-
-### Render 4 graphs together
-
-(i | j ) / (k | l)
-
-
-
-### Capsule width
-
-capwidth = data_capsule_length_width %>% 
-  select(Capsule_width, Continent) %>% 
-  ggstatsplot::ggbetweenstats(
-    x = Continent,
-    y = Capsule_width,
-    type = "robust",
-    messages = TRUE,
-    #pairwise.comparisons = TRUE,
-    #p.adjust.method = "bonferroni",
-    title = "(M)"
-  ) +
-  xlab("Continent") + ylab("Capsule width (mm)")+
-  theme(panel.background = element_rect(colour = "grey20"))+
-  theme(axis.text.x = element_text(face="bold", color="black", size=10),
-        axis.text.y = element_text(face="bold", color="black", size=10))+
-  ggplot2::scale_color_manual(values = c("#0E6251", "#FF5733", "#581845"))
-
-
-
-
-### Capsule length
-
-caplength = data_capsule_length_width %>% 
-  select(Capsule_length, Continent) %>% 
-  ggstatsplot::ggbetweenstats(
-    x = Continent,
-    y = Capsule_length,
-    type = "robust",
-    messages = TRUE,
-    #pairwise.comparisons = TRUE,
-    #p.adjust.method = "bonferroni",
-    title = "(N)"
-  ) +
-  xlab("Continent") + ylab("Capsule length (mm)")+
-  theme(panel.background = element_rect(colour = "grey20"))+
-  theme(axis.text.x = element_text(face="bold", color="black", size=10),
-        axis.text.y = element_text(face="bold", color="black", size=10))+
-  ggplot2::scale_color_manual(values = c("#0E6251", "#FF5733", "#581845"))
-
-
-
-
-### Plot together
-
-capwidth + caplength 
-
-
-
 ## Pie graph style
 
 ### Number of capsule per leaf axil
@@ -522,7 +182,7 @@ names(data_qr)
 
 ### Plant height
 
-model_plant_height <- lmer(formula = Plant_height ~ Block + Accession * Site + (1 | Block:Accession:Site), data = na.omit(data_qr))
+model_plant_height <- lmer(formula = Plant_height ~ Accession * Site + (1 | Block:Site), data = na.omit(data_qr))
 
 summary(model_plant_height)
 
@@ -532,88 +192,51 @@ anova(model_plant_height)
 
 ### Capsule number
 
-model_Capsule_Number <- lmer(formula = Capsule_Number ~ Block + Accession * Site + (1 | Block:Accession:Site), data = data_qr)
+model_Capsule_Number <- lmer(formula = Capsule_Number ~ Accession * Site + (1 | Block:Site), data = na.omit(data_qr))
 
 anova(model_Capsule_Number)
 
+
+
 ### Branch_number
 
-model_Branch_number <- lmer(formula = Branch_number ~ Block + Accession * Site + (1 | Block:Accession:Site), data = data_qr)
+model_Branch_number <- lmer(formula = Branch_number ~ Accession * Site + (1 | Block:Site), data = na.omit(data_qr))
 
 anova(model_Branch_number)
 
+
+
+
 ### Diameter
 
-model_Diameter <- lmer(formula = Diameter ~ Block + Accession * Site + (1 | Block:Accession:Site), data = data_qr)
+model_Diameter <- lmer(formula = Diameter ~ Accession * Site + (1 | Block:Site), data = na.omit(data_qr))
 
 anova(model_Diameter)
 
+
+
+
 ### Productive_axis_length
 
-model_Productive_axis_length <- lmer(formula = Productive_axis_length ~ Block + Accession * Site + (1 | Block:Accession:Site), data = data_qr)
+model_Productive_axis_length <- lmer(formula = Productive_axis_length ~ Accession * Site + (1 | Block:Site), data = na.omit(data_qr))
 
 anova(model_Productive_axis_length)
 
-summary(model_Productive_axis_length)
-
-
-
-names(data_nqr1)
-
-
-library(rptR)
-
-# distribution
-
-library(pastecs)
-
-View(data_nqr1)
-
-res.norm.dbi = stat.desc(data_nqr1[4:10], norm = TRUE, basic=FALSE, desc=FALSE)
-
-res.norm.dbi
-
-library(dlookr)
-normality(data_nqr1[4:10])
-plot_normality(data_nqr1[4:10])
-
-names(data_nqr1)
-
-
-# imputation NA
 
 
 ### Dried_Biomass
 
-Dried_Biomass_mean <- imputate_na(data_nqr1, xvar = Dried_Biomass, yvar = Dried_Seed_Weight, method = "mean")
-n1 = plot(Dried_Biomass_mean)
 
-Dried_Biomass_median <- imputate_na(data_nqr1, xvar = Dried_Biomass, yvar = Dried_Seed_Weight, method = "median")
-n2 = plot(Dried_Biomass_median)
+model_Dried_Biomass <- lmer(formula = Dried_Biomass ~ Accession * Site + (1 | Block:Site), data = na.omit(data_nqr1))
 
-Dried_Biomass_mode <- imputate_na(data_nqr1, xvar = Dried_Biomass, yvar = Dried_Seed_Weight, method = "mode")
-n3 = plot(Dried_Biomass_mode)
-
-Dried_Biomass_knn <- imputate_na(data_nqr1, xvar = Dried_Biomass, yvar = Dried_Seed_Weight, method = "knn")
-n4 = plot(Dried_Biomass_knn)
-
-Dried_Biomass_rpart <- imputate_na(data_nqr1, xvar = Dried_Biomass, yvar = Dried_Seed_Weight, method = "rpart")
-n5 = plot(Dried_Biomass_rpart)
-
-Dried_Biomass_mice <- imputate_na(data_nqr1, xvar = Dried_Biomass, yvar = Dried_Seed_Weight, method = "mice", seed = 999)
-n6 = plot(Dried_Biomass_mice)
-
-(n1) /
-  (n2) /
-  (n3) /
-  (n4) /
-  (n5) /
-  (n6)
-
-write.csv(Dried_Biomass_mice, "mice_Dried_Biomass")
+anova(model_Dried_Biomass)
 
 
-### Dried_Biomass
+
+
+
+
+
 
 model_Dried_Biomass <- aov(Dried_Biomass ~ Block + Accession * Site , data = data_nqr1)
 
@@ -628,6 +251,17 @@ model_Dried_Biomass <- aov(Dried_Biomass ~ Accession:Site, data = data_nqr1)
 summary(model_Dried_Biomass)
 
 anova(model_Dried_Biomass)
+
+
+model_Dried_Biomass <- lmer(formula = Dried_Biomass ~ Accession * Site + (Block | Site), data = data_nqr1)
+
+summary(model_Dried_Biomass)
+
+ranova(model_Dried_Biomass, reduce.terms = FALSE)
+
+
+
+
 
 
 
@@ -730,6 +364,71 @@ model_Capsule_length <- lmer(formula = Capsule_length ~ Block + Accession + (1 |
 
 anova(model_Capsule_length)
 
+
+
+
+
+
+
+
+names(data_nqr1)
+
+
+library(rptR)
+
+# distribution
+
+library(pastecs)
+
+View(data_nqr1)
+
+res.norm.dbi = stat.desc(data_nqr1[4:10], norm = TRUE, basic=FALSE, desc=FALSE)
+
+res.norm.dbi
+
+library(dlookr)
+normality(data_nqr1[4:10])
+plot_normality(data_nqr1[4:10])
+
+names(data_nqr1)
+
+
+# imputation NA
+
+
+### Dried_Biomass
+
+Dried_Biomass_mean <- imputate_na(data_nqr1, xvar = Dried_Biomass, yvar = Dried_Seed_Weight, method = "mean")
+n1 = plot(Dried_Biomass_mean)
+
+
+
+
+
+
+Dried_Biomass_median <- imputate_na(data_nqr1, xvar = Dried_Biomass, yvar = Dried_Seed_Weight, method = "median")
+n2 = plot(Dried_Biomass_median)
+
+Dried_Biomass_mode <- imputate_na(data_nqr1, xvar = Dried_Biomass, yvar = Dried_Seed_Weight, method = "mode")
+n3 = plot(Dried_Biomass_mode)
+
+Dried_Biomass_knn <- imputate_na(data_nqr1, xvar = Dried_Biomass, yvar = Dried_Seed_Weight, method = "knn")
+n4 = plot(Dried_Biomass_knn)
+
+Dried_Biomass_rpart <- imputate_na(data_nqr1, xvar = Dried_Biomass, yvar = Dried_Seed_Weight, method = "rpart")
+n5 = plot(Dried_Biomass_rpart)
+
+Dried_Biomass_mice <- imputate_na(data_nqr1, xvar = Dried_Biomass, yvar = Dried_Seed_Weight, method = "mice", seed = 999)
+n6 = plot(Dried_Biomass_mice)
+
+(n1) /
+  (n2) /
+  (n3) /
+  (n4) /
+  (n5) /
+  (n6)
+
+write.csv(Dried_Biomass_mice, "mice_Dried_Biomass")
 
 ### Data cleaning and impuation
 
