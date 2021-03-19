@@ -1,5 +1,21 @@
 # field_data_analysis
 
+
+### Oil, protein lignan
+
+1- [Identification, characterisation, and quantification of phenolic compounds in the antioxidant activity-containing fraction from the seeds of Korean perilla (Perilla frutescens) cultivars](https://www.sciencedirect.com/science/article/pii/S0308814612013416#!)
+
+2- [Changes occurring in nutritional components (phytochemicals and free amino acid) of raw and sprouted seeds of white and black sesame (Sesamum indicum L.) and screening of their antioxidant activities](https://link.springer.com/content/pdf/10.1007/s10068-017-0010-9.pdf)
+
+
+3- [Correlation of Lignan Contents with Protein and Oil Contents in the Seeds of Sesamum indicum L.](https://www.koreascience.or.kr/article/JAKO200818259611605.pdf)
+
+
+
+
+
+
+
 [Effects of Red/Blue Light Ratio and Short-term Light Quality Conversion on Growth and Anthocyanin Contents of Baby Leaf Lettuce](https://www.koreascience.or.kr/article/JAKO201015037859939.page)
 
 - #### [Genetic divergence, path analysis and molecular diversity analysis in cluster bean (Cyamopsis tetragonoloba L. Taub.)](https://www.sciencedirect.com/science/article/pii/S0926669016303843) 
