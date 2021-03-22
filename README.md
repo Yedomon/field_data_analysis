@@ -18,6 +18,12 @@
 
 
 
+6 - [Characteristics of antioxidant activity and composition of pumpkin seed oils in 12 cultivars](https://www.sciencedirect.com/science/article/pii/S0308814613001684?casa_token=Lj5-ibOY2eoAAAAA:DXhM6Fl7czJwojIPXW0rhBB0ac_SlRvlQupdmGm8Ic-SfCZuhsicHdtDDOAk7yO3lDO_mWAaEg#b0005)
+
+7- [Identification of the geographical origin of pumpkin seed oil by the use of rare earth elements and discriminant analysis](https://www.sciencedirect.com/science/article/pii/S0308814610007119?casa_token=a1eJaphMENYAAAAA:d76653r-XUzlnnHOVn-dskFXfxClNW3mLKDuGDBEquDVtlK3EZ6j6Nd7p4SG6ujLyLKIOZd7vQ)
+
+8- [Soluble phenolics and antioxidant properties of soybean (Glycine max L.) cultivars with varying seed coat colours](https://www.sciencedirect.com/science/article/pii/S1756464613000716?casa_token=kqrFLstffZ4AAAAA:fH6EtiAj9d8j8De-DyIld5QIt1bah4opvtSwtgwU-8zjoqHAFkq6Xgo6tuyHrVrtFmpWC_Tbig)
+
 
 
 
