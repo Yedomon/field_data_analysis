@@ -14,6 +14,11 @@
 
 4- Protein [1](https://link.springer.com/content/pdf/10.1007/s10811-016-0984-3.pdf) , [2](https://www.mdpi.com/2076-2615/9/5/222/htm), [3](https://pubs.rsc.org/ko/content/articlelanding/2019/fo/c9fo01160a/unauth#!divAbstract) , [machine rapid N cube by Elementar Analysensysteme GmbH](https://www.selectscience.net/products/rapid-n-cube/?prodID=106756)
 
+5- very interesting more closer to our experiment I think [here](https://www.sciencedirect.com/science/article/pii/S1756464613000716?casa_token=kqrFLstffZ4AAAAA:fH6EtiAj9d8j8De-DyIld5QIt1bah4opvtSwtgwU-8zjoqHAFkq6Xgo6tuyHrVrtFmpWC_Tbig)
+
+
+
+
 
 
 [Effects of Red/Blue Light Ratio and Short-term Light Quality Conversion on Growth and Anthocyanin Contents of Baby Leaf Lettuce](https://www.koreascience.or.kr/article/JAKO201015037859939.page)
