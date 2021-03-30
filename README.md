@@ -1,6 +1,9 @@
 # field_data_analysis
 
 
+- #### [Farmers’ Preference, Yield, and GGE-Biplot Analysis-Based Evaluation of Four Sweet Potato (Ipomoea batatas L.) Varieties Grown in Multiple Environments](https://www.mdpi.com/2071-1050/13/7/3730/htm)
+
+
 ### Oil, protein lignan
 
 1- [Identification, characterisation, and quantification of phenolic compounds in the antioxidant activity-containing fraction from the seeds of Korean perilla (Perilla frutescens) cultivars](https://www.sciencedirect.com/science/article/pii/S0308814612013416#!)
