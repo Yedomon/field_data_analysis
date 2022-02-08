@@ -5,8 +5,8 @@ Today .8 02 2022 Meeting with Kanf.
 - Remove Sefa data and rerun the analyses :  BLUES and BLUPS, Genetic correlation following variables
 - Use the BLUPs value to to the GGBiplot analysis
 - Box plot showing the variability of data following  the three sites - use the blup value for each entry per site for each variable to plot the box plot
-- plot a regression plot showing year following yield, FLO, Fe and Zn separetely .....Use BLUPs values (See EiB M2Breeding doc page 12)
-
+- plot a regression plot showing year following yield, FLO, Fe and Zn separetely .....Use BLUPs values (See EiB M2Breeding doc page 12) for the year check [here](http://www.coraf.org/paired/wp-content/uploads/2019/11/Catalogue-Re%CC%81gional-des-Espe%CC%80ces.pdf)
+ and the draft paper from Kanf.
 
 
 
