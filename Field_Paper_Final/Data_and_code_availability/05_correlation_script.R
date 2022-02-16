@@ -1,12 +1,12 @@
 ##--Script for correlation
 ##--By Yedomon Ange Bovys Zoclanclounon | Twitter: @AngeBovys27
 ##--12.03.2021
-##--National Institute of Agricultural Sciences | Department of Genomics | Department of Genomics |RDA | Republic of South Korea
+##--National Institute of Agricultural Sciences | Department of Genomics | RDA | Republic of South Korea
 
 
 ### Library
 
-library(ggcorrplot)
+library(ggstatsplot)
 
 
 ### Data
