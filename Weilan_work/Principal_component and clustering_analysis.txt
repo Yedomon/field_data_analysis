@@ -1,0 +1,250 @@
+# Weilan Li
+# 17th February 2022
+# Task: PCA analysis
+
+## Check the working directory
+
+getwd()
+
+
+## set a working directory
+
+setwd("C:/Users/weilan li/Desktop/R")
+
+
+## Import our data
+
+data_pca = read.csv("data_pca.csv", header = TRUE, sep = "," , row.names = 1)
+
+
+## View our data
+
+View(data_pca)
+
+
+## Load packages
+
+library(FactoMineR) # FOR PCA
+library(factoextra) # FOR graphical view
+library(patchwork) # Arrange multiple panel figures
+
+## Run the PCA
+
+res.pca = PCA(data_pca[1:12], scale = TRUE, graph = FALSE)
+
+
+## Visualize the eigenvalues/variances
+
+fviz_screeplot(res.pca, addlabels = TRUE, title = "")
+
+dimdesc(res.pca, axes = 1:4)
+
+get_eigenvalue(res.pca)
+
+
+
+## Contributions of variable to the PC1
+
+contrib1 = fviz_contrib(res.pca, choice = "var", axes = 1, title = "(A) Principal component 1", xtickslab.rt = 0)
+contrib2 = fviz_contrib(res.pca, choice = "var", axes = 2, title = "(B) Principal component 2", xtickslab.rt = 0)
+contrib3 = fviz_contrib(res.pca, choice = "var", axes = 3, title = "(C) Principal component 3", xtickslab.rt = 0)
+contrib4 = fviz_contrib(res.pca, choice = "var", axes = 4, title = "(D) Principal component 4", xtickslab.rt = 0)
+
+
+## Graphical view of contributions of variables
+
+(contrib1 | contrib2) /
+  (contrib3 | contrib4)
+
+
+## Check the contribution of variable per factorial plan (1, 2), (1, 3), (1, 4)
+
+
+dim12 = fviz_pca_var(res.pca, col.var = "contrib",
+                     gradient.cols = c("#00AFBB", "#E7B800", "#FC4E07"),
+                     repel = TRUE,
+                     title = "(A)",
+                     axes = c(1, 2))
+
+dim13 = fviz_pca_var(res.pca, col.var = "contrib",
+                     gradient.cols = c("#00AFBB", "#E7B800", "#FC4E07"),
+                     repel = TRUE,
+                     title = "(B)",
+                     axes = c(1, 3))
+
+
+dim14 = fviz_pca_var(res.pca, col.var = "contrib",
+                     gradient.cols = c("#00AFBB", "#E7B800", "#FC4E07"),
+                     repel = TRUE,
+                     title = "(C)",
+                     axes = c(1, 4)
+)
+
+
+
+## plot the dimension plot
+
+dim12 + dim13 + dim14
+
+
+## Biplot following color variable
+
+grp_color = as.factor(data_pca[,"CSC"])
+
+color_plot = fviz_pca_biplot(res.pca,
+                             reel = FALSE,
+                             col.var = "black",
+                             geom.var = "text",
+                             title = "Classification by color",
+                             habillage = grp_color,
+                             palette = c("#00AFBB", "#E7B800", "#FC4E07", "#9B59B6"))
+
+color_plot
+
+## without accession names
+
+
+color_plot_nn = fviz_pca_biplot(res.pca,
+                                repel = FALSE,
+                                geom = "point",
+                                col.var = "black",
+                                #geom.var = "text",
+                                title = "Classification by color Dim (1, 2)",
+                                habillage = grp_color,
+                                palette = c("#00AFBB", "#E7B800", "#FC4E07", "#9B59B6"))
+
+
+
+
+#help(fviz_pca_biplot)
+
+color_plot_nn_13 = fviz_pca_biplot(res.pca,
+                                   repel = FALSE,
+                                   geom = "point",
+                                   axes = c(1, 3),
+                                   col.var = "black",
+                                   #geom.var = "text",
+                                   title = "Classification by color Dim (1,3)",
+                                   habillage = grp_color,
+                                   palette = c("#00AFBB", "#E7B800", "#FC4E07", "#9B59B6"))
+
+
+
+
+
+color_plot_nn_14 = fviz_pca_biplot(res.pca,
+                                   repel = FALSE,
+                                   geom = "point",
+                                   axes = c(1, 4),
+                                   col.var = "black",
+                                   #geom.var = "text",
+                                   title = "Classification by color Dim (1, 4)",
+                                   habillage = grp_color,
+                                   palette = c("#00AFBB", "#E7B800", "#FC4E07", "#9B59B6"))
+
+
+
+## Visualization
+
+
+(color_plot_nn) /
+  (color_plot_nn_13) /
+  (color_plot_nn_14)
+
+
+## Hierarchical Clustering way 1
+
+## Scale the data
+scaled_data = scale(data_pca[1:12])
+
+
+## Find the optimal number of clusters
+
+fviz_nbclust(scaled_data, kmeans, method = "gap_stat")
+
+
+
+## Compute the hierachical clustering and cut into 4 clusters
+
+res = hcut(scaled_data, k = 4, stand = TRUE)
+
+
+## visualization
+
+
+fviz_dend(res, rect = TRUE, cex = 0.5,
+          k_colors = c("#00AFBB", "#E7B800", "#FC4E07", "#9B59B6"))
+
+## Kmeans clustering 
+
+km.res = kmeans(scaled_data, 4, nstart = 25)
+
+
+## fviz_cluster
+
+fviz_cluster(km.res, data = scaled_data,
+             palette = c ("#00AFBB", "#E7B800", "#FC4E07", "#9B59B6"),
+             ggtheme = theme_minimal(),
+             main = "Partitioning Clustering Plot")
+
+
+## Hierarchical clustering based on the PCA
+
+## Run the PCA
+res.pca = PCA(data_pca[1:12], scale = TRUE, graph = FALSE)
+
+## Run the clustering method
+
+res.hcpc = HCPC(res.pca, graph = FALSE)
+
+## Visualization
+
+fviz_cluster(res.hcpc,
+              palette = c ("#00AFBB", "#E7B800", "#FC4E07", "#9B59B6"),
+              shaw.legend = FALSE, title = "") +
+  theme_bw()
+
+
+## Get the list of clusters
+
+list_clust = res.hcpc$data.clust
+
+## Get statistics relative to the variable that chararcterize each cluster
+
+res.hcpc$desc.var
+
+## Save in csv file
+
+write.csv(list_clust, "list_cluster_by_pca")
+
+## Run the pca biplot by showing variable, accession ang group at once
+
+
+## Import the data clust
+
+data_cluster = read.csv("data_clust.csv", header = TRUE, sep = "," , row.names = 1)
+
+## Run the PCA
+res.pca = PCA(data_cluster[1:12], scale = TRUE, graph = FALSE, axes = c(1,2) )
+
+
+
+## Biplot following color variable
+
+grp_cluster = as.factor(data_cluster[,"clust"])
+
+cluster_plot = fviz_pca_biplot(res.pca,
+                             repel = FALSE,
+                             col.var = "black",
+                             geom.var = "text",
+                             title = "",
+                             #addEllipses = TRUE,
+                             show.legend = FALSE,
+                             habillage = grp_cluster,
+                             palette = c("#00AFBB", "#E7B800", "#FC4E07", "#9B59B6"))
+
+cluster_plot
+
+
+
+help("fviz_pca_biplot")

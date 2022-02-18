@@ -1,0 +1,53 @@
+# Weilan Li
+# 16th February 2022
+# Task: Correlation analysis
+
+## Check the working directory
+
+getwd()
+
+
+## set a working directory
+
+setwd("C:/Users/weilan li/Desktop/R")
+
+
+## Import our data
+
+data_cor = read.csv("cor_data.csv", header = TRUE, sep = ",")
+
+
+## View the data
+
+View(data_cor)
+
+
+## Correlation with Hmisc package
+
+library(Hmisc)
+
+rcorr(as.matrix(data_cor))
+
+
+## Correlation with ggstatsplot
+
+
+library(ggstatsplot)
+
+ggcorrmat(data = data_cor, type = "parametric", matrix.type = "lower")
+
+
+## correlation  with PerformanceAnalytics package
+
+library(PerformanceAnalytics)
+
+
+chart.Correlation(data_cor[,1:12], histogram = TRUE, pch = "+")
+
+
+## correlation with corrplot package
+
+library(corrplot)
+
+
+corrplot.mixed(cor(data_cor))
