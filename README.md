@@ -2,6 +2,47 @@
 
 
 
+
+## Load library
+
+```r
+
+library(agricolae)
+
+```
+
+
+## Load your data
+
+```r
+
+yourdata = read.csv("yourdata.csv", h = T, sep =",")
+
+
+```
+
+
+## Run the ANOVA
+
+
+model  = <-aov(CI~Group, data=yourdata)
+
+summary(model)
+
+
+##  Mean comparison 
+
+
+
+HSD.test(model,"Group", group=TRUE,console=TRUE)
+
+
+
+
+
+
+
+
 [Assessing the adaptability and stability of new pearl millet hybrids for grain yield, grain iron and zinc content in Ghana using AMMI analysis](https://link.springer.com/content/pdf/10.1007/s12892-022-00147-3.pdf)
 
 ![IMG](https://media.springernature.com/full/springer-static/image/art%3A10.1007%2Fs12892-022-00147-3/MediaObjects/12892_2022_147_Fig3_HTML.png?as=webp)
